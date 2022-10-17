@@ -17,25 +17,25 @@
 </head>
 <body>
     <div class="container-xxl px-md-5 bg-white shadow-lg">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-conten-md-between py-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+        <header class="row d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none navbar-brand">
                 <img  src="/img/logo.svg" width="229" height="68" alt="Cooking Blog - Made with Node.js">
             </a>
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <ul class="nav col-6 col-md-auto mb-2 justify-content-center mb-md-1">
                 <li><a href="/" class="nav-link px-2 link-secondary">HOME</a></li>
                 <li><a href="/about" class="nav-link px-2 link-secondary">ABOUT</a></li>
                 <li><a href="/submit-recipe" class="nav-link px-2 link-secondary">SUBMIT</a></li>
                 <li><a href="/contact" class="nav-link px-2 link-secondary">CONTACT</a></li>
             </ul>
-            <div class="col-md-3 text-center">
+            <div class="col-md-2">
                 <form method="POST" action="/search">
-                    <input type="search" style="width: 70%;" name="searchTerm" class="form-control" placeholder="Search..." aria-label="Search">
+                    <input type="search" name="searchTerm" class="form-control col-sm-7" placeholder="Search..." aria-label="Search">
                 </form>
             </div>
-            <div class="col-md-3 text-end">
-                <a href="/login" class="btn btn-brimary btn-dark btn-lg px-1 me-md-1">Login</a>
-                <a href="/register" class="btn btn-outline-secondary btn-lg px-1 me-md-1">SignUp</a>
-            </div>
+            <!-- <div class="col-md-2 row">
+                <a href="/login" class="col-sm-3 text-start">Login</a>
+                <a href="/register" class="col-sm-3 text-end">SignUp</a>
+            </div> -->
         </header>
         <main>
             <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
